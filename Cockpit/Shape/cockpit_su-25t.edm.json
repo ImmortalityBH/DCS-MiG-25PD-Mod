@@ -1,0 +1,218 @@
+{
+ "su25-tex02": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex05": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex08": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex04-NO-illum": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su25-tex09": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex01": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex06": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex02_fon": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex03": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex04-illum": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su25-k36": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex07": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex10": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-germetic": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-canopy-glass": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su25-tex11": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su27_cpt_devices02": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25T_cpt_dev_glass": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su25_cpt_panel05": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su27_cpt_glass_blend": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su27_cpt_lamps": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su25T_cpt_misc_glass": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -1.2999999523162841797,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.0,
+  "albedoContrast": 1.0
+ },
+ "su25-mirror": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ },
+ "su25-tex12": {
+  "reflMult": 1.0,
+  "reflAdd": 0.0,
+  "specMult": -2.0720000267028808594,
+  "specAdd": 1.0,
+  "specSelect": 1,
+  "albedoLevel": 0.13699999451637268066,
+  "albedoContrast": 1.0
+ }
+}

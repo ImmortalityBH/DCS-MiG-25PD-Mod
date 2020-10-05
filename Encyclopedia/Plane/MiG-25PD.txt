@@ -1,0 +1,27 @@
+MiG-25PD
+Plane/MiG-25PD.png
+MiG-25PD
+
+Name: MiG-25PD
+Type: Interceptor
+Crew: 1
+Length: 19.75m
+Wing span: 14.01m
+Height: 6.10m
+Wing area: 61.40m^2
+Weight Empty: 20,000kg
+Maximum Weight for takeoff: 36,720kg
+Maximum internal fuel: 47,975gal
+Service ceiling: 50,000 ft (15,000 m)
+Range: 4,480mi (10,145 mi Ferry)
+Powerplant: 2 x Tumansky R-15B-300
+dry thrust of 73.5kN each and afterburning
+with 100.1kN each
+
+Armament: R-40R, R-40T, and R-60Ms on
+4 external pylons.
+
+The MiG-25 is a Soviet, supersonic interceptor that was among the fastest military aircraft to enter service.
+The MiG-25PD contains a new powerful radar with pylons for up to 4 A2A missiles.
+
+

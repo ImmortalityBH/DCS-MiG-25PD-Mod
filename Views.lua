@@ -12,8 +12,8 @@ ViewSettings = {
 	},
 	}, -- Cockpit 
 	Chase = {
-		LocalPoint      = {0.200000,-0.652000,-0.650000},
-		AnglesDefault   = {0.000000,0.000000},
+		LocalPoint      = {-15.000000, 3.000000, 0.000000},
+		AnglesDefault   = {0.000000,-15.000000},
 	}, -- Chase 
 	Arcade = {
 		LocalPoint      = {-21.500000,5.618000,0.000000},
@@ -79,8 +79,8 @@ SnapViews = {
 	},
 	[7] = {
 		viewAngle = 80.000000,--FOV
-		hAngle	 = -143.000000,
-		vAngle	 = 0.000000,
+		hAngle	 = -143.000000,--horizontal
+		vAngle	 = 0.000000,--vertical
 		x_trans	 = 0.350000,
 		y_trans	 = 0.059000,
 		z_trans	 = 0.100000,

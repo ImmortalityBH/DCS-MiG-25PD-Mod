@@ -1,4 +1,0 @@
-a = "yeet"
-function update()
-print_message_touser(a),
-end

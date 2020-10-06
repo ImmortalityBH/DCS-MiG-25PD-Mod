@@ -8,8 +8,7 @@ if EFMenabled == true then
 end
 
 local self_ID = "MiG-25PD"
-
-declare_plugin(self_ID,  --  Ver. Release 1.0 DCS 2.5.2 13/05/2019   -- Special Thanks to ImmortalityBH - Shmoo42 - Goose - NOCO -.   special thanks to the B-52 Mod Discord community. 
+declare_plugin(self_ID,  --  Ver. Release 1.0 DCS 2.5.2 13/05/2019   -- Special Thanks to Shmoo42 - Goose - NOCO -.   special thanks to the B-52 Mod Discord community. 
 {
 installed 	 = true, -- if false that will be place holder , or advertising
 dirName	  	 = current_mod_path,
@@ -50,9 +49,9 @@ LogBook =
 	},	
 InputProfiles =
 	{
-		["MiG-25PD"]   = current_mod_path .. '/Input',
+		["MiG-25PD"]   = current_mod_path .. '/Input/MiG-25PD',
 	},
---[[Options = 
+	Options = 
 	{
 		{
 			name 	   = _("MiG-25PD"),
@@ -60,7 +59,7 @@ InputProfiles =
 			dir        = "Options",
 			CLSID      = "{MiG-25PD options}",
 		},
-	},--]]
+	},
 })
 ---------------------------------------------------------------------------------------
 mount_vfs_texture_path	(current_mod_path .."/Skins/1/ME")	--for menu screen aircraft button
@@ -82,8 +81,10 @@ else
 	make_flyable('MiG-25PD', current_mod_path..'/Cockpit/Scripts/', nil, current_mod_path..'/comm.lua')
 end
 
+dofile(current_mod_path..'/Weapons/Weapons.lua')
 dofile(current_mod_path..'/MiG-25PD.lua')
 dofile(current_mod_path..'/Views.lua')
+
 make_view_settings('MiG-25PD', ViewSettings, SnapViews)
 ---------------------------------------------------------------------------------------
 --dofile(current_mod_path.."/Weapons/Weapons.lua") -- Smoke + Tank + POD GUN

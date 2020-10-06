@@ -1,32 +1,25 @@
-
 -----------------------------------------------------------------------------------------------
-WOLALIGHT_STROBES 		   = 1--must be collection
+-- Made by Immortality 10/5/20
+-----------------------------------------------------------------------------------------------
+--[[WOLALIGHT_STROBES 		   = 1--must be collection
 WOLALIGHT_SPOTS  		   = 2--must be collection
 WOLALIGHT_NAVLIGHTS 	   = 3--must be collection
 WOLALIGHT_FORMATION_LIGHTS = 4--must be collection
-WOLALIGHT_TIPS_LIGHTS      = 5--must be collection
-
---dofile(current_mod_path.."/SFM/Config_sfm.lua")
------------------------------------------------------------------------------------------------
---[[
-CLSID = {
-			R-40R = {CLSID = "{4EDBA993-2E34-444C-95FB-549300BF7CAF}"},
-			R-40T = {"{5F26DBC2-FB43-4153-92DE-6BBCE26CB0FF}"},
-			R-60M = {CLSID = "{682A481F-0CB5-4693-A382-D00DD4A156D7}"}, 
-		}
---]]
+WOLALIGHT_TIPS_LIGHTS      = 5--must be collection--]]
 --Functions
 local get_inboard_pylon_table(  )
 	local tbl = {
-		{CLSID = "{4EDBA993-2E34-444C-95FB-549300BF7CAF}"},
-		{CLSID = "{5F26DBC2-FB43-4153-92DE-6BBCE26CB0FF}"},
-		{CLSID = "{682A481F-0CB5-4693-A382-D00DD4A156D7}"}, 
+		{CLSID = "{Centerline_FT_5300L}"},
+		{CLSID = "{4EDBA993-2E34-444C-95FB-549300BF7CAF}"}, -- R40-R
+		{CLSID = "{5F26DBC2-FB43-4153-92DE-6BBCE26CB0FF}"}, -- R-40T
+		{CLSID = "{682A481F-0CB5-4693-A382-D00DD4A156D7}"}, -- R-60M
 	}
 	return tbl
 end
 
 local get_outboard_pylon_table( ) 
 	local tbl = {
+		{CLSID = "{Centerline_FT_5300L}"},
 		{CLSID = "{4EDBA993-2E34-444C-95FB-549300BF7CAF}"},
 		{CLSID = "{5F26DBC2-FB43-4153-92DE-6BBCE26CB0FF}"},
 		{CLSID = "{682A481F-0CB5-4693-A382-D00DD4A156D7}"}, 
@@ -45,11 +38,11 @@ MiG_25PD =  {
 -----------------------------this stuff is done for the most part------------------------------
 	--HumanCockpit 			= false,
 	--HumanCockpitPath		= current_mod_path..'/Cockpit/',
-	ViewSettings 			= ViewSettings,
-	Picture 				= "MiG-25PD.png", --"B-52D.png"
+	ViewSettings 			= ViewSettings, -- V
+	Picture 				= "MiG-25PD.png", -- pylon image
 	Rate 					= 40, -- RewardPoint in Multiplayer
 	Shape 					= "MiG-25PD",
-	   -- enabled for east block
+	-- enabled for east block and middle eastern countries
 	Countries = {"Russia", "USSR", "Syria", "Libya",
 	"Algeria", "Armenia", "Bulgaria", "Belarus",
 	"India", "Iraq", "Georgia", "Kazakhstan",
@@ -58,12 +51,12 @@ MiG_25PD =  {
 	shape_table_data 		= 
 	{
 		{
-			file  	 		= 'MiG-25PD';
+			file  	 		= 'mig-25p'; -- 'MiG-25PD'
 			life  	 		= 18; -- lifebar
 			vis   	 		= 3; -- visibility gain.
 			desrt    		= 'NCPC-7_destr'; -- Name of destroyed object file name
 			fire  	 		= { 300, 8}; -- Fire on the ground after destoyed: 300sec 30m
-			username 		= 'MiG-25PD';
+			username 		= 'MiG-25PD'; -- f2 bar name?
 			index    		=  WSTYPE_PLACEHOLDER;
 			classname 		= "lLandPlane";
 			positioning 	= "BYNORMAL";
@@ -104,7 +97,6 @@ MiG_25PD =  {
 	--nose_gear_amortizer_normal_weight_stroke    = 0.02,                     -- 0.0,              --  -0.00311633945,	
 
 ----------------- SUSPENSION CODE    -------------------------------------------------------
--- I ain't changed this bruv
 	AOA_take_off 			    = 0.18, -- AoA in take off (for AI)  --mig
 	CAS_min 				    = 1800,   -- if this is not OVERAL FLIGHT TIME, but jus LOITER TIME, than it sholud be 10-15 minutes.....CAS capability in minute (for AI) 30 hours 
 	CanopyGeometry = {          
@@ -137,7 +129,7 @@ MiG_25PD =  {
 	Ny_max 						= 5,  -- Max G (for AI)  --mig
 	Ny_max_e 					= 5,  -- Max G (for AI) 
 	Ny_min 						= -2,   -- Min G (for AI)  --mig
-	RCS 						= 10,  -- Radar Cross Section m2     --mig
+	RCS 						= 10,  -- Radar Cross Section m^2     --mig
 
 	H_max 					 	= 20700, -- m 50,000ft --mig
 	V_land 						= 62.5,   -- Land speed in m/s (for AI) 155mph  --mig
@@ -163,7 +155,7 @@ MiG_25PD =  {
 	air_refuel_receptacle_pos 	= {0, 0, 0}, -- refuel coords --not used  will be simulated --mig
 --------------------------------------------------------------------------------------------------------------------
 	--crew defined 1 = pilot
-	crew_size	 = 1,  what to do about this exactly? changed 
+	crew_size	 = 1,  -- what to do about this exactly? changed 
 	crew_members = 
 	{
 		[1] = 
@@ -239,30 +231,6 @@ MiG_25PD =  {
 									524,	--  ARU control arm indicator
 									525,	--  cockpit inlet ramp indicator
 									},                                                                                                     
---------------------------------------------------------------------------------------------------------------------                                    
-	
-    ViewSettings = {
-	Cockpit = {
-	[1] = {-- player slot 1
-		CockpitLocalPoint       = {1.35, 0.3, 0.0},--{2.35,0.300,0.0},
-		CameraViewAngleLimits   = {20.000000,120.000000}, -- FOV minimum, maximum
-		CameraAngleRestriction  = {true,60.000000,0.400000},
-		CameraAngleLimits       = {170.000000,-125.000000,90.000000},--max view right/left, max view down, max view up
-		EyePoint                = {0.000000,0.000000,0.000000},
-		limits_6DOF             = {x = {-0.050000,0.450000},y ={-0.200000,0.200000},z = {-0.220000,0.220000},roll = 90.000000},-- movement back,front bottom,top right,left
-		Allow360rotation		= false,
-	},
-	}, -- Cockpit 
-	Chase = {
-		LocalPoint              = {0.950,0.600,0.0},   	--{-4.259000,3.819000,0.000000}, 
-		AnglesDefault           = {0.000000,0.000000},  --{180.000000,-8.000000},
-	}, -- Chase 
-	Arcade = {
-		LocalPoint              = {-12.041000,6.419000,0.000000},
-		AnglesDefault           = {0.000000,-8.000000},
-	}, -- Arcade 
-    },	
-
 ---------------------------------------------------------------------------------------------------------------------------------------------
 
 	engines_nozzles = { --from left to right 1,2,3,4,5,6,7,8  nothing has been changed yet
@@ -285,7 +253,6 @@ MiG_25PD =  {
 			smokiness_level     = 	0.3,  --mig
 		},  -- end of [1]
 	},      -- end of engines_nozzles
-
 
 	fires_pos = 
 		{
@@ -313,13 +280,13 @@ MiG_25PD =  {
 	chaff_flare_dispenser 	= {
 		[1] = 
 		{
-			--dir =  {0, -1, -1},
-			--pos =  {-3, -1, 2},
+			dir =  {0, -1, -1},
+			pos =  {-3, -1, 2},
 		}, -- end of [1]  not yet changed
 		[2] = 
 		{
-			--dir =  {0, -1, 1},
-			--pos =  {-3, -1, -2},
+			dir =  {0, -1, 1},
+			pos =  {-3, -1, -2},
 		}, -- end of [2]
 	}, -- end of chaff_flare_dispenser  not yet changed 
 
@@ -345,8 +312,6 @@ MiG_25PD =  {
 	},
 	
 -----------------------------------------------------------------------------------------------------------
-	--Guns = {gun_mount("M_2_L1", { count = 0 },{muzzle_pos = {0, 0, 0}})},
----------------------------------------------------------------------------------------------------------
 
 	Pylons =     {			-- 3DS: x,z,y  x=Forward -x=Back z=Up -z=Down y=Sx -yDx
         pylon(1, 0, 0, 0, 0,			
@@ -389,16 +354,28 @@ MiG_25PD =  {
             },
             get_outboard_pylon_table( )
 		),
-		
+		--[[pylon(4, 0, -0.423, -0.606, 2.799,
+            {
+				use_full_connector_position=true,
+				connector 		= "Pylon3",
+				DisplayName 	= "3",
+				arg				= 310,
+				arg_value		= 1,
+				droppable_shape = "MB339A_INBOARD_PYLON_FULL",
+            },
+            get_outboard_pylon_table( )
+		),--]]
     },
----------------------------------------------------
----------------------------------------------------------------------------------------------------------
---Cylinder135 = 309 ( Visibility Node ) [ Pylon2 ] Pylon Ext Sx
---Cylinder023 = 310 ( Visibility Node ) [ Pylon3 ] Pylon Int Sx
---Cylinder134 = 312 ( Visibility Node ) [ Pylon5 ] Pylon Int Dx
---Cylinder022 = 313 ( Visibility Node ) [ Pylon6 ] Pylon Ext Dx
-----------------------------------------------------------------------------------------------------------	
 
+---------------------------------------------------------------------------------------------------------
+	Guns = {
+		gun_mount("M_61", { count = 1500 },
+		{ 
+			muzzle_pos_connector = "GUN_POINT",
+			muzzle_pos = {6.103, -0.496, -0.406},
+			elevation_initial = 2.000
+		})
+	},
 	Tasks = {
 		aircraft_task(Reconnaissance),   
 		aircraft_task(CAP),
@@ -407,6 +384,25 @@ MiG_25PD =  {
         aircraft_task(Intercept),
     },	
 	DefaultTask = aircraft_task(Intercept),
+	
+	--[[
+		 CLα
+		Coefficient of lift, usually per radian
+		 CLmax
+		Maximum lift (after multiplying by AoA). Simulates stall by capping lift.
+		 CDmin
+		Minimum coefficient of drag
+		 Clδa
+		Aileron control power coefficient, usually per radian
+		 Clp
+		Roll damping coefficient, usually per radian
+		 Cmα
+		Wing pitch coefficient
+		 Cmδ Horizontal tail pitch coefficient
+		 Cn
+		β Directional stability coefficient
+		 K Drag induced from lift factor. Usually is broken down into K' and K''.
+	--]]
 	
 	SFM_Data = {
 	aerodynamics = 

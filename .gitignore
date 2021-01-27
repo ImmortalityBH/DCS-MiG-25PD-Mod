@@ -1,0 +1,6 @@
+# .GITIGNORE, LAST MODIFIED: 1/27/21
+*.dll
+*.obj
+*.pdb
+*.lib
+# EFM RELATED

@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="MiG25.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="MiG25Input.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25Gear.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25Engine.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25ARU.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ED_FM_Utility.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ED_FM_TemplateAPI.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="ControlSurfaces.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25Airframe.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25Constants.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25FuelSystem.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="MiG25System.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{aee5809b-d591-4a83-9b4a-788bd4a8cbcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b025d60d-a5ad-46ca-bbfe-ebe3c6e54f8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

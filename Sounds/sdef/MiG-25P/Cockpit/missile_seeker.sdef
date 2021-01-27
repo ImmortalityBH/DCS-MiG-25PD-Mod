@@ -1,0 +1,6 @@
+wave = "Effects/Aircrafts/MiG-25P/Cockpit/missile_seeker"
+inner_radius = 2
+outer_radius = 0
+looping = true
+position = {-0.37, 0.0, 0.0}
+gain = 1.0

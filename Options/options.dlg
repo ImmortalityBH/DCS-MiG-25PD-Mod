@@ -1,0 +1,52 @@
+dialog = {
+	["children"] = {
+		["containerPlugin"] = {
+			["children"] = {
+				["CPLocalListComboList"] = {
+					["params"] = {
+						["bounds"] =
+						{						
+							["x"] = 54 + 25,
+							["y"] = 361,
+							["w"] = 150,
+							["h"] = 25,
+						},
+						["enabled"] = true,
+						["tabOrder"] = 0,
+						["text"] = "Item1",
+						["tooltip"] = "",
+						["visible"] = true,
+						["zindex"] = 0,
+					},
+					["skin"] = {
+						["params"] = {
+							["name"] = "comboListSkin_options",
+						},
+					},
+					["type"] = "ComboList",
+				},
+	["params"] = {
+		["bounds"] = {
+			["x"] = 0,
+			["y"] = 0,
+			["w"] = 1135,
+			["h"] = 851,
+		},
+		["draggable"] = true,
+		["enabled"] = true,
+		["hasCursor"] = true,
+		["lockFlow"] = false,
+		["modal"] = false,
+		["offscreen"] = false,
+		["resizable"] = false,
+		["text"] = "New dialog",
+		["zOrder"] = 0,
+		
+	},
+	["skin"] = {
+		["params"] = {
+			["name"] = "windowSkin",
+		},
+	},
+	["type"] = "Window",
+}

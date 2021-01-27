@@ -1,7 +1,86 @@
-local parameters = {
-	fighter = true,
-	radar = true,
-	ECM = true,
-	refueling = false,
-}
-return utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/LockOnAirplane.lua', getfenv()))(parameters)
+--local parameters = {
+	--fighter = true,
+	--radar = true,
+	--ECM = false,
+	--refueling = false,
+--}
+utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/LockOnAirplane.lua', getfenv()))(parameters)
+--utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/ATC.lua', getfenv()))(5, {[Airbase.Category.AIRDROME] = true})
+--utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/AWACS.lua', getfenv()))(7, {tanker = false, radar = false})
+--utils.verifyChunk(utils.loadfileIn('Scripts/UI/RadioCommandDialogPanel/Config/Common/Ground Crew.lua', getfenv()))(8)
+--[[
+	[8] = 
+	{
+		aerodynamics = 
+		{
+			Cy0	=	0,
+			Mzalfa	=	4.355,
+			Mzalfadt	=	0.8,
+			kjx	=	2.75,
+			kjz	=	0.00125,
+			Czbe	=	-0.016,
+			cx_gear	=	0.016,
+			cx_flap	=	0.025,
+			cy_flap	=	0.2,
+			cx_brk	=	0.025,
+			table_data = 
+			{
+				[1] = 	{0,	0.025,	0.07,	0.155,	0.13,	0.5,	30,	1.2},
+				[2] = 	{0.2,	0.025,	0.07,	0.155,	0.13,	1.5,	30,	1.2},
+				[3] = 	{0.4,	0.025,	0.07,	0.155,	0.13,	2.5,	30,	1.2},
+				[4] = 	{0.6,	0.025,	0.073,	0.155,	0.13,	3.5,	30,	1.2},
+				[5] = 	{0.7,	0.025,	0.076,	0.155,	0.13,	3.5,	28.666666666667,	1.18},
+				[6] = 	{0.8,	0.025,	0.079,	0.155,	0.13,	3.5,	27.333333333333,	1.16},
+				[7] = 	{0.9,	0.0275,	0.083,	0.172,	0.13,	3.5,	26,	1.14},
+				[8] = 	{1,	0.035,	0.085,	0.183,	0.15,	3.5,	24.666666666667,	1.12},
+				[9] = 	{1.05,	0.0375,	0.0855,	0.199,	0.15,	3.5,	24,	1.11},
+				[10] = 	{1.1,	0.04,	0.086,	0.215,	0.15,	3.15,	18,	1.1},
+				[11] = 	{1.2,	0.041,	0.083,	0.2325,	0.25,	2.45,	17,	1.05},
+				[12] = 	{1.3,	0.04,	0.077,	0.25,	0.35,	1.75,	16,	1},
+				[13] = 	{1.5,	0.038,	0.062,	0.29,	0.35,	1.5,	13,	0.9},
+				[14] = 	{1.7,	0.036066666666667,	0.051333333333333,	0.342,	0.210004,	0.9,	12,	0.7},
+				[15] = 	{1.8,	0.0351,	0.046,	0.368,	0.140006,	0.86,	11.4,	0.64},
+				[16] = 	{2,	0.033,	0.039,	0.42,	1.0000000000066e-005,	0.78,	10.2,	0.52},
+				[17] = 	{2.2,	0.032,	0.034,	0.458,	1e-005,	0.7,	9,	0.4},
+				[18] = 	{2.5,	0.028,	0.033,	0.515,	1e-005,	0.7,	9,	0.4},
+				[19] = 	{3,	0.025,	0.033,	0.61,	1e-005,	0.7,	9,	0.4},
+				[20] = 	{3.9,	0.025,	0.033,	0.61,	1e-005,	0.7,	9,	0.4},
+			}, -- end of table_data
+		}, -- end of aerodynamics
+		engine = 
+		{
+			Nmg	=	60.00001,--67.5,
+			MinRUD	=	0,
+			MaxRUD	=	1,
+			MaksRUD	=	0.85,
+			ForsRUD	=	0.91,
+			type	=	"TurboJet",
+			hMaxEng	=	19,
+			dcx_eng	=	0.0144,
+			cemax	=	1.24,
+			cefor	=	2.56,
+			dpdh_m	=	8700,
+			dpdh_f	=	10000,
+			table_data = 
+			{
+				[1] = 	{0,	112700,	174440},
+				[2] = 	{0.2,	117600,	176400},
+				[3] = 	{0.4,	117600,	193060},
+				[4] = 	{0.6,	122500,	225400},
+				[5] = 	{0.7,	122500,	230000},
+				[6] = 	{0.8,	132000,	233000},
+				[7] = 	{0.9,	135000,	236000},
+				[8] = 	{1,	132000,	245000},
+				[9] = 	{1.1,	124000,	248000},
+				[10] = 	{1.2,	120000,	248000},
+				[11] = 	{1.3,	115000,	260000},
+				[12] = 	{1.5,	104000,	288000},
+				[13] = 	{1.8,	97000,	337000},
+				[14] = 	{2,	99000,	348000},
+				[15] = 	{2.2,	104000,	348000},
+				[16] = 	{2.515,	100000,	337000},
+				[17] = 	{3,	127400,	317000},
+			}, -- end of table_data
+		}, -- end of engine
+	}, -- end of [8]
+--]]

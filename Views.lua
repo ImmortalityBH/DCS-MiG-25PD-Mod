@@ -1,7 +1,7 @@
 ViewSettings = {
 	Cockpit = {
 	[1] = {-- player slot 1
-		CockpitLocalPoint      = {6.3500000,1.25000,0.000000},
+		CockpitLocalPoint      = {7.17300,0.93500,0.000000},
 		CameraViewAngleLimits  = {20.000000,120.000000},
 		CameraAngleRestriction = {false,90.000000,0.500000},
 		CameraAngleLimits      = {200,-80.000000,90.000000},
@@ -12,7 +12,7 @@ ViewSettings = {
 	},
 	}, -- Cockpit 
 	Chase = {
-		LocalPoint      = {-15.000000, 3.000000, 0.000000},
+		LocalPoint      = {-18.000000, 5.000000, 0.000000},
 		AnglesDefault   = {0.000000,-15.000000},
 	}, -- Chase 
 	Arcade = {

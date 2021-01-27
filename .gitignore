@@ -4,3 +4,7 @@
 *.pdb
 *.lib
 # EFM RELATED
+EFM/Debug/
+EFM/Release/
+EFM/x64/
+*.vs

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Headers">
+      <UniqueIdentifier>{aee5809b-d591-4a83-9b4a-788bd4a8cbcb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{b025d60d-a5ad-46ca-bbfe-ebe3c6e54f8d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="include\Cockpit\ccParametersAPI.h" />
+    <ClInclude Include="include\FM\wHumanCustomPhysicsAPI_ImplementationDeclare.h" />
+    <ClInclude Include="include\FM\wHumanCustomPhysicsAPI.h" />
+    <ClInclude Include="include\iCommand.h" />
+    <ClInclude Include="include\stdafx.h" />
+    <ClInclude Include="include\targetver.h" />
+    <ClInclude Include="include\MiG25System.h" />
+    <ClInclude Include="include\MiG25Input.h" />
+    <ClInclude Include="include\MiG25Gear.h" />
+    <ClInclude Include="include\MiG25FuelSystem.h" />
+    <ClInclude Include="include\MiG25Engine.h" />
+    <ClInclude Include="include\MiG25Constants.h" />
+    <ClInclude Include="include\MiG25ARU.h" />
+    <ClInclude Include="include\MiG25Airframe.h" />
+    <ClInclude Include="include\MiG25.h" />
+    <ClInclude Include="include\ED_FM_Utility.h" />
+    <ClInclude Include="include\ED_FM_TemplateAPI.h" />
+    <ClInclude Include="include\ControlSurfaces.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\dllmain.cpp" />
+    <ClCompile Include="src\MiG25.cpp" />
+    <ClCompile Include="src\stdafx.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="src\ReadMe.txt" />
+  </ItemGroup>
+</Project>

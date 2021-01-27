@@ -4,7 +4,7 @@
 *.pdb
 *.lib
 # EFM RELATED
-EFM/Debug/
-EFM/Release/
-EFM/x64/
-*.vs
+EFM/ED_FM_Template/Debug
+EFM/ED_FM_Template/Release
+EFM/ED_FM_Template/x64
+*.vs # .VS is a folder generated visual studio 

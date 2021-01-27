@@ -213,6 +213,7 @@ extern "C"
 											   double& roll);
 
 	ED_FM_TEMPLATE_API bool ed_fm_enable_debug_info();
+	ED_FM_TEMPLATE_API size_t ed_fm_debug_watch(int level, char* buffer, size_t maxlen);
 	ED_FM_TEMPLATE_API void ed_fm_set_plugin_data_install_path(const char* path);
 	ED_FM_TEMPLATE_API void ed_fm_on_panned_failure(const char* data);
 

@@ -43,8 +43,8 @@ double  throttle		  = 0;
 double  stick_roll		  = 0;
 double  stick_pitch		  = 0;
 
-//double  internal_fuel     = 0; //in kg/liters
-//double  fuel_consumption_since_last_time  = 0;
+double  internal_fuel     = 0; //in kg/liters
+double  fuel_consumption_since_last_time  = 0;
 double  atmosphere_density = 0;
 double  aoa = 0;
 double  speed_of_sound = 320; // in m/s
@@ -531,7 +531,28 @@ bool ed_fm_make_balance(double& ax, double& ay, double& az, double& vx, double& 
 
 bool ed_fm_enable_debug_info()
 {
+#if _DEBUG
+	return true;
+#else
+	return false;
+#endif
+}
 
+ED_FM_TEMPLATE_API size_t ed_fm_debug_watch(int level, char* buffer, size_t maxlen)
+{
+	switch (level)
+	{
+	case 0: // ED_WATCH_BRIEF = 0
+
+		break;
+	case 1: // ED_WATCH_NORMAL = 1
+
+		break;
+	case 2: // ED_WATCH_FULL = 2
+
+		break;
+	}
+	return sprintf_s(buffer, maxlen, "THIS IS A TEST");
 }
 
 void ed_fm_set_plugin_data_install_path(const char* path)
